@@ -1,0 +1,104 @@
+/* remember that style sheets cascade, so whatever is on the bottom will override whats on top. Don't have multiple statements for the same element. Organization and hierarchy are key, start with larger elements and work your way down.
+
+Do they best you can with this, talk with each other and help each other. Most colors and fonts are provided for you. Use adobe color to find the other colors from the sample image.*/
+h2, p {
+  font-family: "Lato", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+h1, h3, li, a {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+a {
+    text-decoration: none;
+}
+h2 {
+    size: 22.5px;
+    font-weight: 700;
+}
+h3 {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #047f8c;
+    size: 18px;
+    font-weight: 600;
+}
+li {
+    size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+}
+p {
+    font-weight: 400;
+    size: 15px;
+}
+h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+    size: 37px;
+    text-align: center;
+    color: #3a400c;
+}
+footer {
+    font-family: "Lato", serif;
+    background-color: #04adbf;
+    text-align: center;
+    text-transform: uppercase;
+    color: #3a400c;
+    text-decoration: none;
+}
+header {
+    color: #3a400c;
+    text-decoration: none;
+}
+nav a:link {
+    text-decoration: none;
+    color: #047f8c;
+}
+h1 a:link {
+    color: #3a400c;
+    text-decoration: none;
+}
+li a:link {
+    color:#3a400c;
+    text-transform: lowercase;
+    text-decoration: none;
+}
+p a:link{
+    color: #3a400c;
+    text-decoration: none;
+}
+.social-links {
+    color: #047f8c;
+    font-weight: 600;
+    size: 16px;
+    word-spacing: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+body {
+    border-right: solid 100px #f2984c;
+    border-left: solid 100px #f2984c;
+    background-color: #cde3f1;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+img {
+    size: 50px;
+    display: inline-block;
+}
+hr {
+    color: white
+}
+nav {
+    text-align: center;
+    padding-left: 16px;
+    padding-right: 16px;
+    color: #047f8c;
+    word-spacing: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+}

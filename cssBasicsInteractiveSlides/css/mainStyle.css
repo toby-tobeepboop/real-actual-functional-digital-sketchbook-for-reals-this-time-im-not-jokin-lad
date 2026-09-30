@@ -1,0 +1,145 @@
+/*  start with the most general and work your way down to the most specific - organization is the name of the game! */
+
+/* universal style */
+
+* {
+
+}
+
+body {
+  /* STEP 2. add font family */
+  /* STEP 2. add background color */
+  /* STEP 2. add text color */
+  /* STEP 3. add border */
+ font-family: Arial, Helvetica, sans-serif;
+ background-color: rgb(245, 218, 185);
+ color: #1010ff;
+
+ border: 10px dotted black;
+
+  margin-left:;
+  margin-right:;
+  padding:;
+}
+
+header {
+  margin-bottom:;
+  /* margin-bottom adds space btween the bottom of the header and the top of the next element */
+}
+
+section {
+  height:;
+    /* /* this makes the height of each section equal to the height of the screen; this is a way to add not just dimension but also later we will use this for responsiveness */
+
+}
+
+em {
+  color: green;
+}
+
+.redem em {
+  color: red;
+}
+
+.aech em {
+  color: blue
+  size: 25px
+}
+
+.tres {
+text-align: center
+}
+
+h2, h3 {
+ background-color: blue;
+}
+h3 {
+  background-color: red;
+}
+
+.code header nav {
+  color: pink;
+}
+
+#resourceNav, nav {
+  text-align:;
+  background-color:
+}
+
+#resourceNav a {
+  text-decoration:
+  margin: 10px;
+}
+
+#resourceNav a:hover {
+  color:
+  text-decoration:;
+  cursor: crosshair;
+}
+
+header nav a {
+  color:
+  text-decoration:;
+  margin: 10px;
+ 
+}
+
+/* body styling */
+
+h1 {
+  text-align: center;
+  padding: 5%;
+}
+
+h2 {
+  margin-bottom: 25px;
+  text-align: center;
+  size: 16px;
+  color:rgb(39, 112, 175)
+  /* Step 5. change alignment to center */
+  /* Step 5. change size */
+  /* Step 5. change color */
+
+}
+
+h3 {
+  margin-bottom: 15px;
+
+  /* Step 5. change size */
+  /* Step 5. change color */
+}
+
+li {
+  font-size: 18px;
+  color: black;
+}
+
+h2, h3 {
+  background-color:rgb(245, 218, 185);
+}
+
+/* STEP 4. create a tag for the redEm class and change the color to red */
+
+ol li {
+  font-size: 22px;
+  color:;
+}
+
+
+
+#specificity {
+  width: 100%;
+}
+
+
+/* this code is is for the appearance of the code samples in the html document */
+
+pre code{
+  color: black;
+  background-color: white;
+  border: 1px solid black;
+  display: block;
+  font-size: 30px;
+}
+
+

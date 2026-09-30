@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>CSS Basics Lecture</title>
+
+<!-- STEP 10. search for Lato and add it to the head using the provided link tags. Also add it to the CSS file using the font-family property and font values to complete the declaration -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<!-- Step 1. add a path to the stylesheet located in the css folder -->
+ <link rel="stylesheet" href="css/mainStyle.css">
+ </head>
+  <body>
+
+    <header>
+      <h1> CSS Basics Interactive Lecture</h1>
+        <nav>
+          <!-- more on the navigation a little later, we will come back to this. -->
+          <a href="#">sectionOne</a>
+          <a href="#">sectionTwo</a>
+          <a href="#">sectionThree</a>
+          <a href="#">sectionFour</a>
+          <a href="#bonus">bonus</a>
+        </nav>
+        <div id="resourceNav">
+          <a href="https://fonts.google.com/">google fonts</a>
+          <a href="https://fonts.adobe.com/">adobe fonts</a>
+          <a href="https://color.adobe.com/create/color-wheel">adobe color</a>
+        
+    </header>
+
+    <inheritance>
+      <h2>
+        Inheritance
+      </h2>
+        <h3>
+          In css, just like with humans, inheritance is how certain properties are passed on from a parent element down to the child and grandchild elements.
+        </h3>
+          <p>if you specify the <em>font-family</em>, <em>background-color</em> & <em>color</em> properties on the body tag, they will apply to the children as well
+<!-- STEP 2. add font family arial, helvetica to body -->
+<!-- STEP 2. bisque color to body -->
+<!-- STEP 2. #1010ff color to text in body -->
+            now, not all properties are inherited - for example if the body had a <em>border</em>, the child elements would not inherit the border.
+<!-- STEP 3. add border to body, the syntax is 1px solid black, we will discuss borders a little later.--> 
+            The ones that are passed down are what we call <strong><em>base styles</em></strong></p>
+          <br>
+          <p><strong>
+            here is a list of some of the most common inherited properties we will see during our time together, this is, by no means, a comprehensive list:</strong>
+          </p>
+            <ul>
+              <li>color</li>
+              <li>font-family</li>
+              <li>font-size</li>
+              <li>font-style</li>
+              <li>font-weight</li>
+              <li>letter-spacing</li>
+              <li>list-style</li>
+              <li>text-align</li>
+              <li>text-indent</li>
+              <li>text-transform</li>
+              <li>word-spacing</li>
+            </ul>
+            <br>
+          <p>this stays true until you override the code. we can do that here by adding a <em>class</em> to change the <em>emphasized</em> text color.</p> 
+<!-- STEP 4. create a class="redEm" and add it to all em tags using the search and replace feature in VSC.-->
+<!-- STEP 4. target the redEm class and change the color to red.-->
+  <div class="wrap"><div class="redem"><p>We can also target our <em>h1<em>,</p></div> <div class="wrap"><div class="aech"><p><em>h2</em></p></div>, <div class="wrap"><div class="tres"><p><em>h3</em></p></div> & our <div class="wrap"><div class="aech"><p><em>li</em></p></div> elements by changing the color and size and text alignment</p>
+<!-- STEP 5. change color and size of the h2 and li tags and make the h3 tag center aligned -->
+          </inheritance>
+
+<!-- this is how we comment out code. the shortcut is command+/ it is useful for adding notes and for parsing or debugging. We can also use it in our css to help organize -->
+
+<!-- STEP 6. lets give each section its own id so we can style it later, we will call this "two" -->
+
+    <nested>
+      <h2>Nested Selectors</h2>
+        <h3>Remember how we talked about nesting? And we compared code to the Russian Matryoshka dolls? In this section, we will explore how this works.</h3>
+          <img src="img/matryoshka.gif" alt="gif of nesting Matryoshka dolls">
+          <br>
+          <p><strong>here are the most common types of selectors:</strong></p>
+          <br>
+            <ol>
+              <li><strong>universal:</strong> addresses every single element individually</li>
+                <pre>
+                  <code>
+                      * {} 
+                  </code>
+                </pre>
+          <p>what happens if we change the body selector to the universal selector?</p>
+<!-- STEP 7. change body to * to show the difference, don't forget to change it back - add a * selector and reset margins to 0, best practices to always do this -->
+              <li><strong>specific:</strong> address a specific type of element - for example, the code below addresses the li tag</li>
+                <pre>
+                  <code>
+                    li {} 
+                  </code>
+                </pre>
+              <li><strong>descendant:</strong> address an element that is a descendant of another - for example, the code below addresses the li tag inside the ol tag.</li>
+                <pre>
+                  <code>
+                    ol li {} 
+                  </code>
+                </pre>
+          <p>how do we change the <em>li</em> tags in the second list without changing the ones in the first list?</p>
+<!-- STEP 8. practice using descendant selectors-->
+              <li><strong>multiple:</strong> addresses multiple elements, selectors sepererated by comma - for example, the code below addresses the <em>h2</em> and the <em>h3</em> elements</li>
+                  <pre>
+                    <code>
+                      h2, h3 {} 
+                    </code>
+                  </pre>
+          <p>change the background color of the <em>h2</em> and the <em>h3</em> elements</p>
+<!--  STEP 8. practice using descendant selectors--> 
+          <p>the way we address elements depends on where they are located within that stack, and the selector we choose can have a big impact.</p>
+            </ol>
+          </nested>
+
+    <specific>
+      <h2>Specificity is the Name of the Game!</h2>
+        <h3>The more specific rule will take precedence over the more general rule.</h3>
+          <span class="img">id<img id="specificity" src="img/specific.png" alt="order of specificity"></span>
+          <br>
+          <p>let's look at the navigation for this example. our code looks something like this:</p>
+            <pre>
+              <code>
+                &lt;header&gt;
+                  &lt;nav&gt;
+                    &lt;a&gt;
+                    &lt;/a&gt;
+                  &lt;/nav&gt;
+                &lt;/header&gt;
+              </code>
+            </pre>
+        <p>in order to change the &lt;a&gt; we have to get specific.</p>
+<!--  STEP 9. list out the hierarchy for the header until just the nav changes -->
+        <p>we could just select the anchor tag, right? yes but, what happens if we have anchor tags elsewhere that we dont want to change? scroll to the top and change the <em>nav</em> anchors but leave the <em>subNav</em> alone</p>
+
+      <h3>the most important rule: as you list styles the one on the bottom will always win! Think about the term Cascading!</h3>
+<!--  STEP 10. add a new h3 selector under the previous to show that it will change -->
+          </specific>
+
+    <fonts>
+      <h2>
+        Adding Custom Fonts
+      </h2>
+        <h3>There are a couple of ways to do this:</h3>
+            <a href="https://fonts.google.com/" target="_blank">Google Fonts</a>
+          <p> we are going to head over to google fonts now and choose a font for this document. Google fonts is a 100% free option</p>
+          <p> we will need to add code to both the <em>head</em> AND to our <em>css file</em> in order to make this work.</p>
+          <br>
+<!-- STEP 10. search for Lato and add it to the head using the provided link tags. Also add it to the CSS file using the font-family property and font values to complete the declaration -->
+            <a href="https://fonts.adobe.com/" target="_blank">Adobe Fonts</a>
+          <p> for those of you with creative cloud access, you can also find fonts for your web projects here. If you don't have access to the creative cloud, use Google Fonts instead</p>
+          <p>find a font here and add it to your web project, thats the key. then do the same thing you did for Google fonts.</p>
+    </fonts>
+
+    <jump>
+      <h3>jump links</h3>
+        <a href="https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html">read me</a>
+        <p>then make the jumplinks work for each section</p>
+        <a id="img">jump to image!</a>
+<!-- STEP 11. make the jump links work. -->
+    </jump>
+    <reflection>
+      <!-- STEP 12. what did you learn here? remember to add your reflections to this page. -->
+       <hr>
+       <h5>my reflection</h5>
+       <p>what I honestly learnt from this excercise is 1] i need to stop trying to code at midnight and 2] i need to make sure the zoom recording works for me on a day that is not the day before a coding assignment of this magnitude is due. i definitely messed up a lot of the css, and will be practicing it more in my sketchbook, because if i want to sleep tonight i have no other choice than to stop with what i have. i feel terrible, i dont like practicing css at all, and with more time i would have taken better notes on the interactive lecture. i will not make my mistakes again, but i am so tired that i'd rather practice on my own code than change template code. it makes it easier for me to pick up the skills. i like and prefer it in my learning. this is the best thing this set of assignments has taught me: coding is way more fun to learn when its all your own choice. i am sorry for my informality, but again- it is midnight. i apologize for the work ive done here, it isnt my best. i will code a little further from the sun with better notes this next week, i swear. i made genuine attempts at everything i could, broke almost all of it, and it is all still confusing to me. css is a beautiful horse i have yet to properly tame. i have learnt to ask for help more.</p>
+       <a href="../index.html" target="_blank"><img src="../img/homebutton.png" alt="go back to home page!"></a>
+      <!-- STEP 13. next you need to add this page to your Interactive Sketchbook. Remember to add your navigation so that you
+       can get to and from this page within your sketchbook. Where and how will you add it? the design choice is up to you.. -->
+    </reflection>
+  </body>
+</html>

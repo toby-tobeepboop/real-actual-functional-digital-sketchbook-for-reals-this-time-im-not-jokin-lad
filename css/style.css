@@ -19,6 +19,7 @@ body {
 h1 {
     text-align: center;
     color: rgb(40, 77, 11);
+    background-color: rgb(202, 235, 166);
 }
 h3 {
     text-align: center;
@@ -44,6 +45,34 @@ a, img {
     text-align: center;
     color: rgb(62, 182, 11);
 }
-.frog img {
+
+#column {
+    justify-content: center, space-evenly;
+    display: flex;
+    flex-direction: row;
+    margin-inline: 5px;
+    padding-inline: 5px;
+}
+
+#frog {
+    justify-content: space-between, center;
+    flex-direction: column;
+    flex-wrap: nowrap;
     display: block;
+    padding-right: 50px;
+}
+
+#frog img {
+    justify-content: center;
+    display: block;
+}
+
+#nav {
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+}
+
+#footer {
+    background-color: rgb(202, 235, 166);
 }

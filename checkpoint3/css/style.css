@@ -27,11 +27,27 @@ nav {
     border: double 6px rgb(53, 102, 24);
 }
 
-titled {
+#titled {
     text-align: center;
     color:rgb(53, 102, 24);
 }
 
 p {
     color:rgb(78, 145, 39)
+}
+
+#columns {
+    display: flex;
+    flex-direction: row;
+    padding: 1%;
+    justify-content: space-around;
+}
+
+#journal {
+    padding: 1%
+}
+
+#reflections {
+    padding: 1%;
+    background-color: rgb(215, 236, 176);
 }

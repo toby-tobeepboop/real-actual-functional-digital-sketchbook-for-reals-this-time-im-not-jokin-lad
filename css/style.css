@@ -67,6 +67,11 @@ a, img {
     display: block;
 }
 
+#frog:hover img {
+    transform: skew(30deg, 40deg) rotate(1000deg);
+    transition: 5s;
+}
+
 #nav {
     justify-content: space-between;
     padding: 10px;

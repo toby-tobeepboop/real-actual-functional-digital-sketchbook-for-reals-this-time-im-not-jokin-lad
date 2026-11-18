@@ -88,7 +88,7 @@ a, img {
     width: 100%;
   }
 
-  #nav {
+  #nav, #frog {
     flex-direction: column;
   }
 }
@@ -102,7 +102,7 @@ a, img {
     width: 100%;
   }
 
-  #nav {
+  #nav, #frog, #column {
     flex-direction: column;
   }
 }

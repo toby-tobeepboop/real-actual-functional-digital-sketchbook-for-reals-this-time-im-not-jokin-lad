@@ -1,21 +1,17 @@
-/* the * indicates universal styles, we will get into that later in the semester
-for now, you can leave these alone */
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    min-height: fit-content;
+    max-height: fit-content;
 }
-
-/* Css is how we add all things style, below there are two simple styles added
-go ahead and play with these, can you get the colors to change? What do you notice?
- */
 
 body {
 
     color: #26241C;
     background-color: #F2F0D8;
 }
+
 h1 {
     text-align: center;
     color: rgb(40, 77, 11);
@@ -80,4 +76,33 @@ a, img {
 
 #footer {
     background-color: rgb(202, 235, 166);
+}
+
+/* -------- media queries --------- */
+@media screen and (max-width: 768px){
+  body {
+    font-size: 75%;
+  }
+
+  #nav img {
+    width: 100%;
+  }
+
+  #nav {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 480px){
+  body {
+    font-size: 75%;
+  }
+
+  #nav img {
+    width: 100%;
+  }
+
+  #nav {
+    flex-direction: column;
+  }
 }

@@ -18,9 +18,6 @@ body {
 }
 img {
     display: inline-block;
-}
-
-img {
     z-index: 0;
     justify-content: space-between;
 }
@@ -36,4 +33,12 @@ p {
 
 a {
     text-decoration: none;
+}
+
+#images img {
+    justify-content: center, space-evenly;
+    display: flex;
+    flex-direction: row;
+    margin-inline: 5px;
+    padding-inline: 5px;
 }
